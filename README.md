@@ -2,13 +2,12 @@
 
 Desktop client using jellyfin-web with embedded MPV player. Supports Windows, Mac OS,
 and Linux. Media plays within the same window using the jellyfin-web interface unlike
-Jellyfin Desktop. Supports audio passthrough. Based on [Plex Media Player](https://github.com/plexinc/plex-media-player).
+Jellyfin Desktop. Supports audio passthrough. Based on [Plex Media Player](https://github.com/plexinc/plex-media-player) and [Jellyfin Media Player](https://github.com/jellyfin/jellyfin-media-player).
 
 ![Screenshot of Jellyfin Media Player](https://raw.githubusercontent.com/iwalton3/mpv-shim-misc-docs/master/images/jmp-player-win.png)
 
 Downloads:
- - [Windows, Mac, and Linux Releases](https://github.com/jellyfin/jellyfin-media-player/releases)
- - [Flathub (Linux)](https://flathub.org/apps/details/com.github.iwalton3.jellyfin-media-player)
+ - [Windows, Mac, and Linux Releases](https://github.com/bluestreamclub/jellyfin-media-player/releases)
 
 Related Documents:
  - Web client: https://repo.jellyfin.org/releases/server/portable/versions/stable/web/
@@ -19,11 +18,11 @@ Related Documents:
 
 ## Building at a glance (Linux)
 
-To download the latest stable release, get the lattest version tag from the [latest releases page](https://github.com/jellyfin/jellyfin-media-player/releases/latest) and append the following to your pull command during the build phase for JMP "--branch $VERSIONTAG --single-branch"
+To download the latest stable release, get the lattest version tag from the [latest releases page](https://github.com/bluestreamclub/jellyfin-media-player/releases/latest) and append the following to your pull command during the build phase for JMP "--branch $VERSIONTAG --single-branch"
 
 Example:
 ```bash
-git clone https://github.com/jellyfin/jellyfin-media-player.git --branch v1.9.1 --single-branch
+git clone https://github.com/bluestreamclub/jellyfin-media-player.git --branch v1.9.1 --single-branch
 ```
 
 
@@ -47,7 +46,7 @@ sudo ln -s /usr/local/lib/x86_64-linux-gnu/libmpv.so /usr/local/lib/x86_64-linux
 sudo ln -sf /usr/local/lib/x86_64-linux-gnu/libmpv.so /usr/local/lib/libmpv.so.2
 sudo ldconfig
 cd ~/jmp/
-git clone https://github.com/jellyfin/jellyfin-media-player.git
+git clone https://github.com/bluestreamclub/jellyfin-media-player.git
 cd jellyfin-media-player
 ./download_webclient.sh
 cd build
@@ -80,7 +79,7 @@ sudo ln -s /usr/local/lib64/libmpv.so /usr/local/lib/x86_64-linux-gnu/libmpv.so.
 sudo ln -s /usr/local/lib64/libmpv.so /usr/local/lib/x86_64-linux-gnu/libmpv.so
 sudo ldconfig
 cd ~/jmp/
-git clone https://github.com/jellyfin/jellyfin-media-player.git
+git clone https://github.com/bluestreamclub/jellyfin-media-player.git
 cd jellyfin-media-player/
 ./download_webclient.sh 
 cd build/
